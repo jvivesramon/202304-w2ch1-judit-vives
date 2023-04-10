@@ -1,19 +1,5 @@
-@use "typography";
-
-html {
-  font-family: typography.$main-typography;
-}
-
-body {
-  font-size: rem;
-}
-
-input {
-  font: inherit;
-  border: none;
-}
-
-button {
-  cursor: pointer;
-  font: inherit;
-}
+$first-color: #e38826;
+$second-color: #006970;
+$third-color: #004241;
+$paragraphs-color: #ffffffbf;
+$light-color: #f2f2f2;

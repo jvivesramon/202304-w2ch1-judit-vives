@@ -1,0 +1,31 @@
+@use "typography";
+@use "functions";
+@use "colors";
+
+html {
+  font-family: "Lexend Deca";
+  width: 100vw;
+}
+
+body {
+  background-color: colors.$light-color;
+}
+
+input {
+  font: inherit;
+  border: none;
+}
+
+h2 {
+  color: colors.$light-color;
+}
+
+p {
+  color: colors.$paragraphs-color;
+  font-size: functions.pixelsToRem(15);
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+}
