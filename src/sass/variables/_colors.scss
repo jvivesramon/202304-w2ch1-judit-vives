@@ -1,0 +1,19 @@
+@use "typography";
+
+html {
+  font-family: typography.$main-typography;
+}
+
+body {
+  font-size: rem;
+}
+
+input {
+  font: inherit;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+}
