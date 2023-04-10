@@ -9,12 +9,17 @@
   padding: functions.pixelsToRem(40);
 
   &--first {
-    background-color: $first-color;
+    background-color: colors.$first-color;
   }
 
   &--second {
-    background-color: $second-color;
+    background-color: colors.$second-color;
     border-radius: 0;
+  }
+
+  &--third {
+    border-radius: 0 0 functions.pixelsToRem(8) functions.pixelsToRem(8);
+    background-color: colors.$third-color;
   }
 }
 
@@ -34,10 +39,14 @@
   font-size: functions.pixelsToRem(15);
 
   &--first {
-    color: $first-color;
+    color: colors.$first-color;
   }
 
   &--second {
-    color: $second-color;
+    color: colors.$second-color;
+  }
+
+  &--third {
+    color: colors.$third-color;
   }
 }
