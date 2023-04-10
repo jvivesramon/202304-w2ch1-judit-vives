@@ -3,6 +3,9 @@
 @use "../variables/typography";
 
 .card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: functions.pixelsToRem(320);
   height: functions.pixelsToRem(450);
   border-radius: functions.pixelsToRem(8) functions.pixelsToRem(8) 0 0;
@@ -27,14 +30,12 @@
   font-size: functions.pixelsToRem(30);
   font-family: $second-typography;
   text-transform: uppercase;
-  margin: functions.pixelsToRem(40) 0;
 }
 
 .button-section {
   background-color: $light-color;
   width: functions.pixelsToRem(150);
   padding: functions.pixelsToRem(13);
-  margin-bottom: functions.pixelsToRem(40);
   border-radius: functions.pixelsToRem(30);
   font-size: functions.pixelsToRem(15);
 
@@ -48,5 +49,19 @@
 
   &--third {
     color: colors.$third-color;
+  }
+}
+
+@media screen and (min-width: functions.pixelsToRem(900)) {
+  .card-container {
+    border-radius: functions.pixelsToRem(8) 0 0 functions.pixelsToRem(8);
+
+    &--second {
+      border-radius: 0;
+    }
+
+    &--third {
+      border-radius: 0 functions.pixelsToRem(8) functions.pixelsToRem(8) 0;
+    }
   }
 }
