@@ -11,6 +11,11 @@
   &--first {
     background-color: $first-color;
   }
+
+  &--second {
+    background-color: $second-color;
+    border-radius: 0;
+  }
 }
 
 .main-title {
@@ -30,5 +35,9 @@
 
   &--first {
     color: $first-color;
+  }
+
+  &--second {
+    color: $second-color;
   }
 }
