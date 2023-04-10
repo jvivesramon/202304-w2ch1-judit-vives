@@ -11,3 +11,10 @@
   align-items: center;
   background-color: $light-color;
 }
+
+@media screen and (min-width: functions.pixelsToRem(900)) {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
